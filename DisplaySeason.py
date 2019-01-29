@@ -6,18 +6,28 @@ Created on Tue Jan 29 11:53:22 2019
 """
 
 month = input("Enter month: ")
-
-winterlist = ["jan","feb","march"]
-summerlist = ["april","may","june"]
-rainylist = ["july","august","sep","oct"]
-
-for winter in winterlist :
-    if month == winter :
-        print("You are in the winter season")
-for summer in summerlist :
-    if month == summer :
-        print("You are in the summer season")
+#
+#winterlist = ["jan","feb","march"]
+#summerlist = ["april","may","june"]
+#rainylist = ["july","august","sep","oct"]
+#
+#for winter in winterlist :
+#    if month == winter :
+#        print("You are in the winter season")
+#for summer in summerlist :
+#    if month == summer :
+#        print("You are in the summer season")
+#        
+#for rainy in rainylist :
+#    if month == rainy :
+#        print("You are in the rainy season")
         
-for rainy in rainylist :
-    if month == rainy :
-        print("You are in the rainy season")
+#or 
+
+if month in ["jan","feb","march"] :
+    print("You are in the winter season") 
+elif month in  ["april","may","june"] :
+    print("You are in the summer season")
+else :
+    print("You are in the rainy season")
+    

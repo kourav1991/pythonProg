@@ -16,7 +16,7 @@ elif len(pass1) > 12 :
     print("invalid paswword length is more then 12 char")
 else :
     for var in alist :
-        if pass1.index(var):
+        if var in pass1:
            match =  match + 1
 
 if match > 0 :
